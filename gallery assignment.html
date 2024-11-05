@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .container{
+            height: 800px;
+            display: grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            /*grid-template-columns: 1fr 2fr 1fr 2fr;*/
+            /*grid-template-columns: repeat(3,1fr);*/
+            /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-template-rows: repeat(auto-fill,minmax(200px,1fr));*/
+           
+           /* grid-template-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);*/
+            grid-template-areas: "img1 img1 img2 cont"
+                                 "img3 img4 img5 cont"
+                                 "img6 img6 img7 cont"
+                                 "img8 img9 img10 cont"
+                                 "img11 img11 img12 cont"
+                                 "img13 img14 img14 cont"
+                                 "img16 img16 img17 cont";
+            
+        }
+        .Items{
+            background-color: coral;
+            border: 3px solid green;
+            
+        }
+        #item1{
+          
+           /* grid-column-start: 1;
+            grid-column-end: 3;*/
+            grid-area: img1;
+
+
+          
+        }
+        #item3{
+            /*justify-self: end;*/
+           /* grid-row-start: -1;
+            grid-row-end: 6;
+            align-items: end;*/
+            grid-area: cont;
+            text-align: right;
+           
+        }
+        #item7{
+            grid-area: img6;
+        }
+
+        #item11{
+
+            grid-area: img11;
+        }
+        #item14{
+
+            grid-area: img14;
+        }
+        #item16{
+
+            grid-area: img16;
+        }
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Items" id="item1">
+            <img src="natur_tree.jpg" height="500px" width="700px">
+        </div>
+        <div class="Items" id="item2">
+              <img src="water.jpg" height="480px" width="480">
+            </div>
+        <div class="Items" id="item3">  
+           <h2>SHUTTER</h2>
+            <p>HOME</p>
+            <p>PHOTOS</p>
+            <p>BIO</p>
+            <p>BLOG</p>
+            <p>CONTACT</p>
+        </div>
+        <div class="Items" id="item4">
+            <img src="https://www.ionos.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/ethical-hacking-t.jpg" height="300px">
+        </div>
+        <div class="Items" id="item5">
+            <img src="beach.jpg" height="300px">
+        </div>
+        <div class="Items" id="item6">
+            <img src="https://courseline.co.uk/wp-content/uploads/2023/03/Ethical-Hacking-768x479.jpg" height="300px">
+        </div>
+        <div class="Items" id="item7">
+            <img src="https://ethicalhackingindia.in/wp-content/uploads/2018/05/Ehical_hacking_hacker-min.jpg" height="500px" width="900px">
+        </div>
+        <div class="Items" id="item8">
+            <img src="nature2.jpg" width="100%">
+        </div>
+        <div class="Items" id="item9">
+            <img src="natur_tree.jpg" width="100%">
+        </div>
+        <div class="Items" id="item10">
+            <img src="https://cdn.pixabay.com/photo/2018/07/10/10/38/edge-3528319_1280.jpg" id="item10" width="100%">
+        </div>
+        <div class="Items" id="item11">
+            <img src="https://img.huffingtonpost.com/asset/5769df442200001d00f8247c.jpg?ops=scalefit_720_noupscale" width="100%">
+        </div>
+        <div class="Items" id="item12">
+            <img src="https://img.pikbest.com/origin/09/10/85/22SpIkbEsTXDH.jpg!w700wp" width="100%">
+        </div>
+        <div class="Items" id="item13">
+             <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/10/What-is-M.Tech-in-Artificial-Intelligence_AI.jpg.optimal.jpg" width="100%">
+        </div>
+        <div class="Items" id="item14">
+            <img src="https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="550px" width="800px">
+        </div>
+        <div class="Items" id="item15">
+            <img src="https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
+        </div>
+        <div class="Items" id="item16">
+            <img src="https://www.familyvacationcritic.com/wp-content/uploads/sites/19/2019/05/BoySwimminginCaribbean-HERO.jpg" width="500px">
+        </div>
+        <div class="Items" id="item17">
+            <img src="https://www.businesstechweekly.com/wp-content/uploads/2023/04/Ethical-Hacking.jpg" width="100%">
+        </div>
+        
+
+       
+       
+        
+    </div>
+</body>
+</html>
